@@ -1,1 +1,5 @@
 rootProject.name = 'sofka'
+
+include ':model'
+
+findProject(':model').projectDir=file('./domain/model')
