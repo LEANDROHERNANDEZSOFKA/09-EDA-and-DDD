@@ -2,11 +2,11 @@ package co.sofka.vo.transaction;
 
 import co.sofka.generic.ValueObject;
 
-public class AccountId implements ValueObject<String> {
+public class TransactionAccountId implements ValueObject<String> {
 
     private final String accountId;
 
-    public AccountId(String accountId) {
+    public TransactionAccountId(String accountId) {
         if(accountId.isEmpty()){
             throw new IllegalArgumentException("Account ID cannot be empty");
         }

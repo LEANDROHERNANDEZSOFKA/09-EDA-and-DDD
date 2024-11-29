@@ -1,5 +1,12 @@
 rootProject.name = 'sofka'
 
 include ':model'
+include ':ports'
+include ':usescases'
+include ':mongo-repository'
+
 
 findProject(':model').projectDir=file('./domain/model')
+findProject(':ports').projectDir=file('./domain/ports')
+findProject(':usescases').projectDir=file('./domain/usescases')
+findProject(':mongo-repository').projectDir=file('./infrastructure/driven-adapters/mongo-repository')
